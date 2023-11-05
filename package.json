@@ -1,0 +1,12 @@
+{
+  "name": "p5js-ts-template",
+  "version": "1.0.0",
+  "description": "Provides a barebones typescript and p5.js template with full autocomplete support.",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.7.2",
+    "typescript": "^5.2.2"
+  }
+}
