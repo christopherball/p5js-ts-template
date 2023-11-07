@@ -1,4 +1,4 @@
-# p5js-ts-template
+# p5jsTemplate
 Provides a barebones typescript and p5.js template with full autocomplete support.
 
 ## Usage
