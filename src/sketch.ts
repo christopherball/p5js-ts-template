@@ -2,10 +2,6 @@ let sketch = (p: p5) => {
     let x = 100;
     let y = 100;
 
-    p.preload = () => {
-        
-    }
-
     p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight);
     };
