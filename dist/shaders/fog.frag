@@ -1,9 +1,20 @@
+#version 300 es
+/*  OLD SYNTAX      MODERN SYNTAX   :   PERMISSION
+    uniform         uniform         :   read
+    varying         in              :   read
+    gl_FragColor    out             :   read / write    */
+
+#ifdef GL_ES
 precision highp float;
-varying vec2 vTexCoord;
+#endif
+
 uniform sampler2D img;
 uniform sampler2D depth;
 uniform vec3 fog;
 
+in vec2 vTexCoord;
+out vec4 fragColor;
+
 void main() {
-  gl_FragColor = mix(texture2D(img, vTexCoord), vec4(fog / 255., 1.), pow(texture2D(depth, vTexCoord).r, 6.));
+  fragColor = mix(texture(img, vTexCoord), vec4(fog / 255., 1.), pow(texture(depth, vTexCoord).r, 6.));
 }

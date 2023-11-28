@@ -1,7 +1,16 @@
+#version 300 es
+/*  OLD SYNTAX      MODERN SYNTAX   :   PERMISSION
+    uniform         uniform         :   read
+    attribute       in              :   read
+    varying         out             :   read / write    */
+
+#ifdef GL_ES
 precision highp float;
-attribute vec3 aPosition;
-attribute vec2 aTexCoord;
-varying vec2 vTexCoord;
+#endif
+
+in vec3 aPosition;
+in vec2 aTexCoord;
+out vec2 vTexCoord;
 
 void main() {
   vec4 positionVec4 = vec4(aPosition, 1.0);

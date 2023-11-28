@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Provides a barebones typescript and p5.js template with full autocomplete support.",
   "scripts": {
-    "stage": "cp node_modules/p5/lib/p5.min.js dist/lib/; cp node_modules/p5/lib/addons/p5.sound.min.js dist/lib/",
+    "stage": "cp node_modules/p5/lib/p5.* dist/lib/; cp node_modules/p5/lib/addons/p5.* dist/lib/",
     "build": "rm dist/scripts/*.*; rm dist/lib/*.*; npm run stage; tsc",
-    "watch": "tsc --watch"
+    "watch": "npm run build; tsc --watch"
   },
   "devDependencies": {
     "p5": "^1.8.0",

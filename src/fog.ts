@@ -6,7 +6,8 @@ new p5((s: p5) => {
   };
 
   s.setup = () => {
-    s.createCanvas(200, 200, s.WEBGL);
+    s.createCanvas(s.windowWidth, s.windowHeight, s.WEBGL);
+    s.noStroke();
     // @ts-ignore
     layer = s.createFramebuffer();
     fog = s.color("#b2bdcf");
