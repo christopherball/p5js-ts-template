@@ -2,12 +2,12 @@
   "compilerOptions": {
     "module": "none",
     "noImplicitAny": true,
-    "outFile": "./build/sketch.js",
+    "outDir": "dist/scripts",
     "preserveConstEnums": true,
     "removeComments": true,
     "rootDir": "src",
     "sourceMap": true,
-    "target": "ES6",
+    "target": "ESNext",
     "moduleResolution": "node"
   }
 }
