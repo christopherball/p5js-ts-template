@@ -5,7 +5,7 @@ Provides a barebones typescript and p5.js template with full autocomplete suppor
 ## Usage
 
 1. `npm install` Installs node_modules included in package.json.
-2. `npm run build` Copies lib dependencies to the `dist` folder alongside generated `tsc` transpilations.
+2. `npm run build` Stages lib dependencies to the `dist` folder alongside generated `tsc` transpilations.
 3. `npm run watch` Triggers typescript transpilation and on-going change monitoring.
 
 ## Recommendation
