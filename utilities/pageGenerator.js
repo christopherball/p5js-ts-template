@@ -12,8 +12,6 @@ var data = JSON.parse(fs.readFileSync("./src/page.json", "utf8"));
 
 for (var i = 0; i < data.page.length; i++) {
   var result = render("./src/page.handlebars", data.page[i]);
-  // console.log(result);
-  // console.log();
   fs.writeFileSync(
     "./dist/" + data.page[i].scriptFilenamePrefix + ".html",
     result
