@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>{{pageTitle}}</title>
+    {{#if production}}
+      <script src="lib/p5.min.js"></script>
+      {{#if includeSound}}
+        <script src="lib/p5.sound.min.js"></script>
+      {{/if}}
+    {{else}}
+      <script src="lib/p5.js"></script>
+      {{#if includeSound}}
+        <script src="lib/p5.sound.js"></script>
+      {{/if}}
+    {{/if}}
+    <link rel="shortcut icon" href="https://p5js.org/assets/img/favicon.ico" />
+    <link rel="icon" href="https://p5js.org/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+
+  <body>
+    <script src="scripts/{{scriptFilenamePrefix}}.js"></script>
+  </body>
+</html>

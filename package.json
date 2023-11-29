@@ -5,12 +5,13 @@
   "scripts": {
     "clean": "rm dist/scripts/*.*; rm dist/lib/*.*",
     "stage": "npm run clean; cp node_modules/p5/lib/p5.* dist/lib/; cp node_modules/p5/lib/addons/p5.* dist/lib/",
-    "build": "npm run stage; tsc",
-    "watch": "npm run stage; tsc --watch"
+    "build": "npm run stage; node utilities/pageGenerator.js; tsc",
+    "watch": "npm run stage; node utilities/pageGenerator.js; tsc --watch"
   },
   "devDependencies": {
-    "p5": "^1.9.0",
     "@types/p5": "^1.7.4",
+    "handlebars": "^4.7.8",
+    "p5": "^1.9.0",
     "typescript": "^5.3.2"
   }
 }

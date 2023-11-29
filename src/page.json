@@ -1,0 +1,16 @@
+{
+  "page": [
+    {
+      "pageTitle": "Index Page",
+      "scriptFilenamePrefix": "index",
+      "production": false,
+      "includeSound": false
+    },
+    {
+      "pageTitle": "Fog Page",
+      "scriptFilenamePrefix": "fog",
+      "production": false,
+      "includeSound": false
+    }
+  ]
+}
