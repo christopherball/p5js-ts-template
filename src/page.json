@@ -11,6 +11,12 @@
       "scriptFilenamePrefix": "fog",
       "production": false,
       "includeSound": false
+    },
+    {
+      "pageTitle": "Game of Life Page",
+      "scriptFilenamePrefix": "gol",
+      "production": false,
+      "includeSound": false
     }
   ]
 }

@@ -2,7 +2,7 @@ new p5((s: p5) => {
   let layer: p5.Framebuffer, fogShader: p5.Shader, fog: p5.Color;
 
   s.preload = () => {
-    fogShader = s.loadShader("shaders/fog.vert", "shaders/fog.frag");
+    fogShader = s.loadShader("shaders/shared.vert", "shaders/fog.frag");
   };
 
   s.setup = () => {
